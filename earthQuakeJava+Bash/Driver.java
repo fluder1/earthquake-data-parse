@@ -24,7 +24,7 @@ public class Driver {
 	 * Cycles through earthquakes
 	 */
 	public void parseFile() {
-		Scanner scanner = makeScannerFor("/tmp/trimmedEarthquakeData");
+		Scanner scanner = makeScannerFor("trimmedEarthquakeData");
 		while (scanner.hasNext()) {
 			Earthquake newEarthquake = new Earthquake(scanner.nextLine());
 			checkIfValidEarthquake(newEarthquake);
